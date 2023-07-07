@@ -74,8 +74,10 @@
   services = { 
     openssh = {
       enable = true;
-      PasswordAuthentication = false;
-      PermitRootLogin = false;
+      settings = {
+        PasswordAuthentication = false;
+        PermitRootLogin = false;
+      };
     };
     cockpit = {
       enable = true;
