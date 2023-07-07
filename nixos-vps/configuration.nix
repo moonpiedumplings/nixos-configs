@@ -11,10 +11,12 @@
       ./containers.nix # OCI containers and networking
     ];
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
+  boot = {
+    # we are in a vm so not needed? 
+    #lodaer.grub.enable = true;
+    #loader.systemd-boot.enable = true;
+    #loader.efi.canTouchEfiVariables = true;
+  };
 
   nixpkgs.config = {
     allowUnfree = true;
