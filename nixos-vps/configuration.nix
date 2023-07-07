@@ -44,6 +44,7 @@
   # };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.root.initialHashedPassword = "$y$j9T$Z8cnbLUJSR3qeWuC2b6YS/$uz1pC.ArrehUtkHQHebbaglWUxAmlPGADZjT0EnXzQ5";
   users.users.moonpie = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
