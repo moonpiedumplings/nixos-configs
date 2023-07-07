@@ -83,7 +83,7 @@
     };
   };
 
-  networkign.firewall = {
+  networking.firewall = {
     enable = true;
     #allowedTCPPorts = [ ... ];
     #allowedUDPPorts = [ ... ];
