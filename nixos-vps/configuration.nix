@@ -76,7 +76,7 @@
       enable = true;
       settings = {
         PasswordAuthentication = false;
-        PermitRootLogin = false;
+        PermitRootLogin = "no";
       };
     };
     cockpit = {
