@@ -11,12 +11,12 @@
       ./containers.nix # OCI containers and networking
     ];
 
-  virtualisation.useBootLoader = false;
+  virtualisation.useBootLoader = true;
   boot = {
     # we are in a vm so not needed? 
-    #lodaer.grub.enable = true;
+    lodaer.grub.enable = true;
     #loader.systemd-boot.enable = true;
-    #loader.efi.canTouchEfiVariables = true;
+    loader.efi.canTouchEfiVariables = true;
   };
 
   nixpkgs.config = {
