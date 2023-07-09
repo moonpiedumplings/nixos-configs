@@ -11,7 +11,7 @@
       ./containers.nix # OCI containers and networking
     ];
 
-  virtualisation.useBootLoader = true;
+  #virtualisation.useBootLoader = true;
   boot = {
     # we are in a vm so not needed? 
     loader.grub.enable = true;
