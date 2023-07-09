@@ -14,7 +14,7 @@
   virtualisation.useBootLoader = true;
   boot = {
     # we are in a vm so not needed? 
-    lodaer.grub.enable = true;
+    loader.grub.enable = true;
     #loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
   };
